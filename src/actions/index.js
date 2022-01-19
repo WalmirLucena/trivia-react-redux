@@ -19,6 +19,18 @@ export function fetchData(token) {
   };
 }
 
+export function fetchCategory() {
+  return async (dispatch) => {
+    try {
+      const response = await fetch('https://opentdb.com/api.php?amount=5&category=9');
+      const data = await response.json();
+      dispatch(getData(data));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+}
+
 export function fetchGetToken() {
   return async (dispatch) => {
     try {

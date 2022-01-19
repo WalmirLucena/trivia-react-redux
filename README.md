@@ -2,6 +2,13 @@
 
 Este projeto consiste no desenvolvimento de um jogo de perguntas e respostas baseado no jogo **Trivia** _(semelhante ao show do milhão)_ utilizando _React e Redux_, este foi desenvolvido em grupo a partir das demandas definidas num quadro _Kanban_.
 
+# Time
+
+- [Guilherme Leão](https://github.com/leaob7)
+- [Gustavo Dolzan](https://github.com/gugadolzan)
+- [Pedro Muniz](https://github.com/kariluss)
+- [Rafael Frasson](https://github.com/raffrasson)
+- [Walmir Lucena](https://github.com/WalmirLucena)
 
 # Sumário
 
@@ -305,9 +312,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * O campo de texto para o nome deve possuir o atributo `data-testid` com o valor `input-player-name`
   * O campo de texto para o email deve possuir o atributo `data-testid` com o valor `input-gravatar-email`
   * O botão "Jogar" que leva a pessoa ao jogo deve possuir o atributo `data-testid` com o valor `btn-play`
-
-  **O que será avaliado**
-
   * Escreve o nome da pessoa jogadora
   * Escreve o email da pessoa jogadora
   * Botão Jogar desabilitado quando pessoa jogadora não preencher nenhum campo
@@ -325,9 +329,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * Ao clicar no botão "Jogar", um requisição para a API do Trivia deve ser feita para obter o _token_ de jogador
   * O _token_ deve ser armazenado na aplicação e enviado em todas as requisições seguintes.
   * Salve no `LocalStorage` o _token_ recebido utilizando a chave `token`
-
-  **O que será avaliado**
-
   * Inicia jogo salvando um token de jogador
 
 #### 3. Crie um botão que leva a pessoa para tela de configuração
@@ -338,9 +339,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
 
   * O botão que leva a pessoa a tela de configurações deve possuir o atributo `data-testid` com o valor `btn-settings`
   * A tela de configurações deve possuir um título com o atributo `data-testid` contendo o valor `settings-title`
-
-  **O que será avaliado**
-
   * O botão deve existir na página
   * A tela de configurações deve possuir um título
 
@@ -355,9 +353,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * A imagem do perfil vinda do Gravatar em um elemento que deve possuir o atributo `data-testid` com o valor `header-profile-picture`
   * O nome da pessoa em um elemento que deve possuir o atributo `data-testid` com o valor `header-player-name`
   * O placar zerado em um elemento que deve possuir o atributo `data-testid` com o valor `header-score`
-
-  **O que será avaliado**
-
   * A imagem do Gravatar está presente no header
   * O nome da pessoa está presente no header
   * O placar zerado está presente no header
@@ -376,9 +371,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
     * Os elementos com as alternativas incorretas devem possuir o atributo `data-testid` com o valor `wrong-answer-${index}`, com `${index}` iniciando com o valor `0`
     * As alternativas devem ser exibidas em ordem aleatória
     * Dica: utilize botões (`<button/>`) para as alternativas
-  
-  **O que será avaliado**
-
   * A categoria da pergunta está presente
   * O texto da pergunta está presente
   * As alternativas devem estar presentes
@@ -390,9 +382,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   **Observações técnicas**
 
   * Apenas uma alternativa deve ser a correta
-
-  **O que será avaliado**
-
   * A quantidade de respostas corretas deve ser 1
 
 #### 7. Desenvolva o estilo que, ao clicar em uma resposta, a correta deve ficar verde e as incorretas, vermelhas
@@ -403,9 +392,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
 
   * Utilize a propriedade css `border` com o valor `3px solid rgb(6, 240, 15)` para a alternativa correta.
   * Utilize a propriedade css `border` com o valor `3px solid rgb(255, 0, 0)` para as alternativas incorretas.
-
-  **O que será avaliado**
-
   * Verifica cor da alternativa correta quando acerta a questão
   * Verifica a cor das alternativas incorretas quando acerta a questão
   * Verifica cor da alternativa correta quando erra a questão
@@ -423,9 +409,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * Após o tempo se esgotar, todos os botões das alternativas devem ser desabilitados
 
   Dica: Lembre-se do setTimeout e do setInterval
-
-  **O que será avaliado**
-
   * Aguarda 5 segundos e responde a alternativa correta
   * Aguarda mais de 30 segundos para responder
 
@@ -439,9 +422,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * Leia a seção [Observações técnicas](#observações-técnicas) para mais detalhes
   * Respostas erradas não devem somar ao placar
   * A fórmula para cálculo dos pontos por pergunta é: `10 + (timer * dificuldade)`, onde timer é o tempo restante no contador de tempo e dificuldade é `hard: 3, medium: 2, easy: 1`, dependendo da pergunta. Exemplo: Se no momento da resposta correta o timer estiver contando 17 segundos, e a dificuldade da pergunta é 2 (média), a pontuação deve ser: `10 + (17 * 2) = 44`
-
-   **O que será avaliado**
-
    * Soma pontos ao acertar uma questão
    * Não soma pontos ao errar uma questão
 
@@ -453,9 +433,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
 
   * O botão "Próxima" deve possuir o atributo `data-testid` com o valor `btn-next`
   * Ao clicar nesse botão, a próxima pergunta deve aparecer na tela
-
-  **O que será avaliado**
-
   * O botão de próxima pergunta não deve ser visível o início do jogo
   * Botão de próxima pergunta é visível quando a pergunta é respondida corretamente
   * Botão de próxima pergunta é visível quando a pergunta é respondida incorretamente
@@ -471,9 +448,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * Para perguntas com type:"boolean", mostrar somente 2 campos (um para cada resposta possível)
   * Para perguntas com type:"multiple", mostrar a quantidade necessária de campos (um para cada resposta possível)
   * O elemento da mensagem de _feedback_ deve possuir o atributo `data-testid` com o valor `feedback-text`
-
-  **O que será avaliado**
-
   * Acerta todas as perguntas
   * Erra todas as perguntas
   * Redireciona para a tela de _feedback_ após a quinta pergunta
@@ -489,9 +463,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * A imagem do perfil vinda do Gravatar em um elemento que deve possuir o atributo `data-testid` com o valor `header-profile-picture`
   * O nome da pessoa em um elemento que deve possuir o atributo `data-testid` com o valor `header-player-name`
   * O placar com o valor **atual** em um elemento que deve possuir o atributo `data-testid` com o valor `header-score`
-
-  **O que será avaliado**
-
   * A imagem do Gravatar está presente no header
   * O nome da pessoa está presente no header
   * O placar com o valor atual está presente no header
@@ -505,9 +476,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * A mensagem deve ser "Podia ser melhor..." caso a pessoa acerte menos de 3 perguntas
   * A mensagem deve ser "Mandou bem!" caso a pessoa acerte 3 perguntas ou mais
   * O elemento da mensagem de _feedback_ deve possuir o atributo `data-testid` com o valor `feedback-text`
-
-  **O que será avaliado**
-
   * Acertou menos de 3 perguntas
   * Acertou 3 perguntas
   * Acertou mais de 3 perguntas
@@ -518,8 +486,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
 
   * O placar final deve ser mostrado em um elemento com o atributo `data-testid` com o valor `feedback-total-score`
   * O número de perguntas que a pessoa acertou deve ser exibido em um elemento com o atributo `data-testid` com o valor `feedback-total-question`
-
-  **O que será avaliado**
   * Não acertou nenhuma pergunta
   * Acertou 2 perguntas
   * Acertou 4 perguntas
@@ -530,9 +496,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
 
   * Ao clicar no botão "Jogar novamente", a pessoa deve ser redirecionada para a tela de início (login)
   * O botão para jogar novamente deve possuir o atributo `data-testid` com o valor `btn-play-again`
-
-  **O que será avaliado**
-
   * A pessoa deve ser redirecionada para tela inicial
 
 #### 16. Crie a opção para a pessoa jogadora poder visualizar a tela de _ranking_
@@ -544,9 +507,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * Ao clicar no botão "Ver Ranking", a pessoa deve ser redirecionada para a tela de _ranking_
   * O botão para ir para a tela de _ranking_ deve possuir o atributo `data-testid` com o valor `btn-ranking`
   * A tela de _ranking_ deve possuir um título com o atributo `data-testid` contendo o valor `ranking-title`
-
-  **O que será avaliado**
-
   * A pessoa deve ser redirecionada para tela de ranking
 
 ### Tela de ranking
@@ -562,9 +522,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
   * Os elementos com as pontuações das pessoas que jogaram devem possuir o atributo `data-testid` com o valor `player-score-${index}`, onde `${index}` é iniciado em zero
   * O ranking deve ser armazenado no navegador através do `localStorage`.
   * Leia a seção [Observações técnicas](#observações-técnicas) para mais detalhes
-
-  **O que será avaliado**
-
   * Deve existir uma pessoa no _ranking_
   * Devem existir duas pessoas no _ranking_
   * O _ranking_ deve ser ordenado pela pontuação
@@ -577,9 +534,6 @@ Recomendamos que o Redux e o Router sejam configurados nesse requisito, para que
 
   * Esse botão deve possuir o atributo `data-testid` com o valor `btn-go-home`
   * Esse botão deve enviar a pessoa para o início (tela de preenchimento dos dados)
-
-  **O que será avaliado**
-
   * Volta para a tela inicial
 
 ***Obs: A maneira como a API deve ser estruturada segue o seguinte modelo: https://opentdb.com/api_config.php***
